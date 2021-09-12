@@ -1,8 +1,8 @@
 # Machine-Learning-Project
 
 # Feature Engineering
-Find duplicate rows and remove them
-Find columns which contains NaN and replace NaN values using mode 
+1. Find duplicate rows and remove them
+2.Find columns which contains NaN and replace NaN values using mode 
 Change values less than 25 in funder and installer column to 'others'
 Use target encoding to covert non-numerical columns to numerical columns
 Exatract month and year from "date_recorded" column and create new columns called month and year
