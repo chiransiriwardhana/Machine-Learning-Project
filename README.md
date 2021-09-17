@@ -19,15 +19,17 @@
 
 8. First calculate uncertainity coefficient to identify most related features then remove less related columns from train and test sets
 
-9. Encode label set ( convert "non functional", "functional needs repair", and "functional" to 0, 1, and 2)
+9. Replace longitude=0,latitude=0 values with the mean of the respective region_code
 
-10. Do target encoding for non-numerical columns.
+10. Encode label set ( convert "non functional", "functional needs repair", and "functional" to 0, 1, and 2)
 
-11. permit and public_meeting columns contain boolean values. Therefore True and False in permit and public_meeting columns are converted to 1s and 0s
+11. Do target encoding for non-numerical columns.
 
-12. perform onehot encoding for permit and public_meeting columns.
+12. permit and public_meeting columns contain boolean values. Therefore True and False in permit and public_meeting columns are converted to 1s and 0s
 
-13. provided dataset is unbalanced. So, SMOTE is used to handle unbalanced dataset
+13. perform onehot encoding for permit and public_meeting columns.
+
+14. provided dataset is unbalanced. So, SMOTE is used to handle unbalanced dataset
 
 14. Normalize the train and test sets before fed into XGB classifier.(but it reduce accuracy)
 
@@ -46,3 +48,5 @@
 3. Perform K-fold cross validation
 
 4. Use XGB classifier and Catboost classifier
+
+5. Plot feature important graph after XGB classifier
