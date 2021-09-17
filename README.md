@@ -36,7 +36,7 @@ Git hub link : https://github.com/chiransiriwardhana/Machine-Learning-Project
 
 15. datset is normalized before using the XGB classifier.
 
-16. use XGB classifier and catboost classifier to clssify. However XGB classifier gives better result. Therefore final results are generated using XGB classifier
+16. use XGB classifier and catboost classifier to clssify. However Catboost classifier gives better result for test set. Therefore highest rank is given by catboost classifier
 
 
 
